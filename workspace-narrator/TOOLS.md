@@ -8,10 +8,16 @@ Read the active theme file before responding. The user picks themes by name (e.g
 
 ## Shared data paths
 
-- Personal tasks: `../shared-personal-data/tasks.md`
-- Work tasks: `../shared-chorus-data/tasks.md`
-- Relay to Roux: `../shared-chorus-data/relay.md`
-- User cognitive profile: `../shared-chorus-data/USER.md`
+Canonical Windows paths (Roux v2 reads these directly):
+- Personal tasks: `C:/Users/bette/shared-personal-data/tasks.md`
+- Work tasks: `C:/Users/bette/shared-chorus-data/tasks.md`
+- Relay to Roux: `C:/Users/bette/shared-chorus-data/relay.md`
+- User cognitive profile: `C:/Users/bette/shared-chorus-data/USER.md`
+
+Relative paths from workspace-narrator/ (for non-Windows or portable deployments):
+- `../shared-personal-data/tasks.md`
+- `../shared-chorus-data/tasks.md`
+- `../shared-chorus-data/relay.md`
 
 ## Web search
 
