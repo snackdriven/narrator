@@ -1,0 +1,42 @@
+{
+  "tiers": {
+    "1": {
+      "name": "DeepSeek Free",
+      "model": "openrouter/deepseek/deepseek-chat:free",
+      "inputCost": 0,
+      "outputCost": 0,
+      "useFor": ["bombastic", "catchphrase-heavy", "simple", "one-note", "ALL CAPS personalities"],
+      "notes": "Works well with detailed system prompts and catchphrase lists. ~60% of the cast."
+    },
+    "2": {
+      "name": "DeepSeek V3.2",
+      "model": "openrouter/deepseek/deepseek-v3.2",
+      "inputCost": 0.24,
+      "outputCost": 0.38,
+      "useFor": ["nuanced", "multi-dimensional", "timing-dependent", "balanced tone"],
+      "notes": "Good for characters that need to hold two things at once (funny + sad, threatening + charming). ~30% of the cast."
+    },
+    "3": {
+      "name": "Claude Haiku 4.5",
+      "model": "openrouter/anthropic/claude-haiku-4.5",
+      "inputCost": 1.0,
+      "outputCost": 5.0,
+      "useFor": ["meta-aware", "subtext-dependent", "philosophical", "sustained tonal complexity"],
+      "promptCaching": true,
+      "cachingMinTokens": 4096,
+      "notes": "Reserved for characters whose appeal IS the subtext: BoJack, Abed, Chidi, Severance crew, Black Mirror narrators. ~10% of the cast."
+    }
+  },
+  "costEstimates": {
+    "50messagesPerConversation": {
+      "tier1": "$0.00",
+      "tier2": "~$0.02",
+      "tier3": "~$0.08"
+    },
+    "100conversationsPerMonth": {
+      "tier1": "$0/month",
+      "tier2": "~$2/month",
+      "tier3": "~$8/month"
+    }
+  }
+}
